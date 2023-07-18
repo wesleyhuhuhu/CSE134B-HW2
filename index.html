@@ -1,10 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>$avr</title>
-<meta name="description" content="$avr">
+    <title>$avr</title>
+    <meta name="description" content="$avr">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Here's how $avr can help your life!</h1>
+    <style>
+        body {background-color: #B2E2FD;}
+    </style>
+    <script></script>
+    <header><strong>$avr</strong></header>
+    <nav>
+        <ul>
+            <li><a href="">Account</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Login</a></li>
+            <br>
+            <button id="signup">Sign Up</button>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to $avr</h1>
+        <article>
+            $avr can help you keep track of your spending.
+        </article>
+        <div>
+            <h2>Analyze Spending</h2>
+            <svg width="400" height="300">
+                <circle cx="200" cy="150" r="100" stroke="green" stroke-width="1" fill="yellow" />
+            </svg>
+            <br>
+            <audio controls>
+                <source src="" type="">
+                <source src="" type="">
+                Your browser does not support this audio element.
+            </audio>
+            <h2>Budget</h2>
+            <p>$avr can help you save money.</p>
+            <picture>
+                <source src="" type="">
+                <source src="" type="">
+                <picture>
+                    <source src="" type="">
+                    <source src="" type="">
+                    Your browser does not support this image.
+                </picture>
+            </picture>
+            <aside>
+                <p>
+                    $avr can keep track of your subscriptions as well!
+                </p>
+            </aside>
+            <h2>Features</h2>
+            <ol>
+                <li>Add Expenses</li>
+                <li>View Categories</li>
+                <li>Income and Savings Calculation</li>
+            </ol>
+        </div>
+        <h3><em>Free Trial!</em></h3>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="first name"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="last name">
+            <br><br>
+            <label for="cars">Choose your use case:</label><br>
+            <select name="cars" id="cars">
+                <option value="volvo">Student</option>
+                <option value="saab">Business Owner</option>
+                <option value="mercedes">Employee</option>
+                <option value="audi">Retired</option>
+            </select>
+            <br><br>
+            <section class="experimental">
+                <canvas id="canvas" width="500" height="300" style="border:1px solid #000000;">
+                </canvas>
+                <script>
+                    var canvas = document.getElementById("canvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#00CC00";
+                    ctx.fillRect(0, 0, 250, 150);
+                    </script>
+            </section>
+            <button>Sign Up!</button>
+          </form> 
+        <h3>Add Expense</h3>
+
+    </main>
+    <footer>
+        <section class="Contact">
+            Contact Us
+        </section>
+    </footer>
 </body>
 </html>
