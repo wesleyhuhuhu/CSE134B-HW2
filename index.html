@@ -25,11 +25,19 @@
         <article>
             <span class="app">$avr</span> can help you keep track of your spending.
         </article>
+        <video width="960" height="480" controls>
+            <source src="savrapp.mp4" type="video/mp4">
+            <source src="savrapp.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
         <div>
             <h2>Analyze Spending</h2>
-            <svg width="400" height="300">
-                <circle cx="200" cy="150" r="100" stroke="green" stroke-width="1" fill="yellow" />
-            </svg>
+            <button>Demo</button>
+            <template>
+                <svg width="400" height="300">
+                    <circle cx="200" cy="150" r="100" stroke="green" stroke-width="1" fill="yellow" />
+                </svg>
+            </template>
             <br>
             <audio controls>
                 <source src="" type="">
@@ -38,19 +46,19 @@
             </audio>
             <hr>
             <h2>Budget</h2>
-            <p>$avr can help you save money.</p>
+            <p><b>$avr</b> can help you save money.</p>
             <picture>
                 <source src="" type="">
                 <source src="" type="">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    Your browser does not support this image.
-                </picture>
+                Your browser does not support this image.
             </picture>
+            <figure>
+                <img src="" alt="somepic" width="500" height="600">
+                <figcaption>Saving calculator feature.</figcaption>
+              </figure>
             <aside>
                 <p>
-                    $avr can keep track of your subscriptions as well!
+                    <b>$avr</b> can keep track of your subscriptions as well!
                 </p>
             </aside>
             <hr>
@@ -60,41 +68,92 @@
                 <li>View Categories</li>
                 <li>Income and Savings Calculation</li>
             </ol>
+            <pre><code>Complex algorithms</code>
+    to help
+        analyze
+            spending.</pre>
         </div>
         <h3><em>Free Trial!</em></h3>
+        <hr>
+        <h3>Here's a Demo!</h3>
+        <iframe src="demoUrl" title="demo"></iframe>
+        <hr>
         <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="first name"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="last name">
-            <br><br>
-            <label for="cars">Choose your use case:</label><br>
-            <select name="cars" id="cars">
-                <option value="volvo">Student</option>
-                <option value="saab">Business Owner</option>
-                <option value="mercedes">Employee</option>
-                <option value="audi">Retired</option>
-            </select>
-            <br><br>
-            <section class="experimental">
-                <canvas id="canvas" width="500" height="300" style="border:1px solid #000000;">
-                </canvas>
-                <script>
-                    var canvas = document.getElementById("canvas");
-                    var ctx = canvas.getContext("2d");
-                    ctx.fillStyle = "#00CC00";
-                    ctx.fillRect(0, 0, 250, 150);
-                    </script>
-            </section>
-            <button>Sign Up!</button>
-          </form> 
-        <h3>Add Expense</h3>
-
-    </main>
-    <footer>
-        <section class="Contact">
-            Contact Us
+            <fieldset>
+                <legend>A bit of information about yourself:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="first name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="last name">
+                <br><br>
+                <label for="cars">Choose your use case:</label><br>
+                <select name="cars" id="cars">
+                    <optgroup label="Student">
+                        <option value="volvo">Undergrad</option>
+                        <option value="volvo">Grad</option>
+                    </optgroup>
+                    <option value="saab">Business Owner</option>
+                    <option value="mercedes">Employee</option>
+                    <option value="audi">Retired</option>
+                </select>
+                <br><br>
+                <textarea rows="1" cols="26">If you have a Discount Code</textarea>
+                <br><br>
+                <button>Sign Up!</button>
+            </fieldset>
+          </form>
+          <br>
+          <section class="experimental">
+            <canvas id="canvas" width="500" height="300" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#00CC00";
+                ctx.fillRect(0, 0, 250, 150);
+            </script>
         </section>
+        <h3>Add Expense</h3>
+        <h4>Subscribe Now!</h4>
+        <table>
+            <caption>Subscription:</caption>
+            <colgroup>
+                <col span="1" style="background-color:rgb(0, 255, 221)">
+                <col span="1" style="background-color:rgb(255, 153, 0)">
+            </colgroup>
+            <tr>
+                <th>Time</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Weekly</td>
+                <td>$4.99</td>
+            </tr>
+            <tr>
+                <td>Monthly</td>
+                <td>$14.99</td>
+            </tr>
+            <tr>
+                <td>Yearly</td>
+                <td>$144.99</td>
+            </tr>
+        </table>
+        <label for="subscription">Choose your subscription cycle:</label>
+        <br>
+        <input list="subscriptions" name="subscription" id="subscription">
+
+        <datalist id="subscriptions">
+            <option value="Weekly">
+            <option value="Monthly">
+            <option value="Yearly">
+        </datalist>
+    </main>
+    <br><br><br><br>
+    <footer>
+        <details>
+            <summary><i>Contact Us</i></summary>
+            <p>(420) 123-4567</p>
+        </details>
     </footer>
 </body>
 </html>
